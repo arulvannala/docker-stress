@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: stress-deployment
+  name: stress-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: stress-deployment
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: stress-deployment
+    spec:
+      containers:
+      - image: arulvkhanna/stress-image
+        name: stress
+        command: ["/bin/sh", "-ec", "while :; do echo 'STARTING STRESS TEST'; stress --cpu 4 --io 16  --vm 2 --vm-bytes 500M --timeout 60s -v ; sleep 10s; echo 'STOPPING TEST !!!!';   done"]
+        resources: {}
+status: {}
