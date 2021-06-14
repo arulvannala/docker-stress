@@ -1,5 +1,5 @@
-FROM ubuntu:trusty
-MAINTAINER Jeff Lindsay <progrium@gmail.com>
+FROM ubuntu:bionic
+MAINTAINER Arul Vannala <avannala@vmware.com>
 
 RUN apt-get update && apt-get install -y stress
 
