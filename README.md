@@ -1,3 +1,9 @@
+# docker-stress on kubernetes
+
+kubectl -f stress-test-deployment.yml
+
+NOTE: This process can be Distrutive. Adjust the values in stress cmd to appropriate values
+
 # docker-stress
 
 A Docker container for [stress](http://people.seas.harvard.edu/~apw/stress/), a tool for generating workload. It can produce CPU, memory, I/O, and disk stress.
