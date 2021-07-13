@@ -1,6 +1,6 @@
 # docker-stress on kubernetes
 
-kubectl -f stress-test-deployment.yml
+  $ kubectl -f stress-test-deployment.yml
 
 NOTE: This process can be Distrutive. Adjust the values in stress cmd to appropriate values
 
