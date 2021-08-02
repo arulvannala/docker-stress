@@ -2,7 +2,7 @@
 
   $ kubectl -f stress-test-deployment.yml
 
-NOTE: This process can be Distrutive. Adjust the values in stress cmd to appropriate values
+NOTE: This process can be take down the cluster. Adjust the values in stress cmd to appropriate values
 
 # docker-stress
 
